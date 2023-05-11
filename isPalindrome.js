@@ -3,11 +3,10 @@ let palindromeNum = "212212";
 var isPalidrome = (x) => {
   let reversedNum = x.split("").reverse().join("");
   if (reversedNum === palindromeNum) {
-    return console.log("true");
+    return true;
   }
-  return console.log("false");
+  return false;
 };
-
 button.addEventListener("click", () => {
   isPalidrome(palindromeNum);
 });
